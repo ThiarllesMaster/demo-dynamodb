@@ -1,3 +1,7 @@
 spring:
   application:
     name: demo-dynamodb
+aws:
+  region: ${AWS_REGION:eu-west-1}
+  dynamodb:
+    table-name: ${DYNAMODB_TABLE:Products}
